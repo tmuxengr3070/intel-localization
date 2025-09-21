@@ -41,3 +41,6 @@ Use bootstrap to create a form inside the .subscription-form div with fields for
 
 ## Prompt 10
 Add a container div around the subscription-form divs and h2 to center the content and add padding on the sides for better readability on larger screens. Use bootstrap container class for this purpose and make the form responsive on all screen sizes.
+
+## Prompt 11
+Center the h2 heading above the form and add margin below it for better spacing between the heading and the form. Use bootstrap text-center class to center the text and mb-4 class to add margin below the heading.
