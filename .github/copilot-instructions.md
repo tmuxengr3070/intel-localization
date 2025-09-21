@@ -44,3 +44,6 @@ Add a container div around the subscription-form divs and h2 to center the conte
 
 ## Prompt 11
 Center the h2 heading above the form and add margin below it for better spacing between the heading and the form. Use bootstrap text-center class to center the text and mb-4 class to add margin below the heading.
+
+## Prompt 12
+Using Bootstap, add a Footer with placeholder navigation links (e.g., Privacy Policy, Terms of Use, Contact). Ensure the footer is responsive and visually consistent with the rest of the page. Use appropriate Bootstrap classes to style the footer and its contents.
