@@ -47,3 +47,9 @@ Center the h2 heading above the form and add margin below it for better spacing 
 
 ## Prompt 12
 Using Bootstap, add a Footer with placeholder navigation links (e.g., Privacy Policy, Terms of Use, Contact). Ensure the footer is responsive and visually consistent with the rest of the page. Use appropriate Bootstrap classes to style the footer and its contents.
+
+## Prompt 13
+Adjust color contrast and ensure descriptive alt attributes are present for all images.
+
+## Prompt 14
+Ensure background and foreground colors have a sufficient contrast ratio.
