@@ -35,3 +35,9 @@ I'm adapting a webpage that already includes a timeline section, and I'm working
 Important: the timeline section already works well using flexbox, so I do **not** want to modify or replace that section. Leave the existing timeline code as-is.
 
 Help me generate the new HTML and Bootstrap classes for the three-column layout only, and explain what the code is doing.
+
+## Prompt 9
+Use bootstrap to create a form inside the .subscription-form div with fields for Name, Email and Zip code. Add a subscribe button below the fields. Make the form responsive and visually appealing using bootstrap classes. Ensure proper spacing and alignment of form elements. Add the h2 heading above the form that says "Subscribe to our Newsletter".
+
+## Prompt 10
+Add a container div around the subscription-form divs and h2 to center the content and add padding on the sides for better readability on larger screens. Use bootstrap container class for this purpose and make the form responsive on all screen sizes.
