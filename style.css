@@ -1,0 +1,198 @@
+/* Modern base styles for body and links */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #e9eef3;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: #0068b5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #004b87;
+}
+
+/* --- HEADER STYLES --- */
+#main-header {
+  /* Vibrant blue to teal diagonal gradient background */
+  background: linear-gradient(135deg, #0068b5 0%, #2da0c4 100%);
+  color: #fff;
+  padding: 32px 20px 24px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Intel header logo styling */
+.header-logo {
+  width: 5px;    /* Increased size for better balance */
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 auto; /* Remove space below logo */
+  padding: 18px;            /* More padding for visual balance */
+  
+}
+
+/* Make sure the img inside .header-logo fits nicely */
+.header-logo img {
+  width: 74px;
+  height: 74px;
+  display: block;
+
+}
+
+#main-header h1 {
+  font-size: 2.3rem;
+  margin: 10px 0 8px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#main-header p {
+  font-size: 1.15rem;
+  margin: 0 auto;
+  max-width: 600px;
+  opacity: 0.95;
+}
+
+/* Add this new rule for the gradient line */
+#main-header hr {
+  border: none;
+  height: 3px;
+  width: 60px;
+  margin: 18px auto 18px auto; /* spacing above and below for balance */
+  background: linear-gradient(90deg, #00c6d7 0%, #0068b5 100%);
+  border-radius: 2px;
+  opacity: 0.85;
+}
+
+/* --- TIMELINE SECTION STYLES --- */
+#timeline-section {
+  background: #f5f7fa;
+  padding: 36px 0;
+  overflow-x: auto;
+  border-radius: 16px;
+  margin: 32px 16px 36px 16px;
+  box-shadow: 0 2px 12px rgba(0,104,181,0.04);
+}
+
+/* Flexbox for timeline cards */
+.timeline-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0 20px;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* Enable scroll snap for horizontal timeline */
+  scroll-snap-type: x mandatory;
+}
+
+/* Timeline card styling */
+.timeline-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,104,181,0.10);
+  min-width: 240px;
+  max-width: 300px;
+  flex: 0 0 260px;
+  padding: 22px 14px 16px 14px;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  border: 1px solid #e0e6ed;
+  /* Snap each card to the start of the scroll area */
+  scroll-snap-align: start;
+}
+
+/* Timeline card image styling */
+.timeline-card img {
+  width: 160px;        /* Landscape thumbnail width */
+  height: 100px;       /* Landscape thumbnail height */
+  object-fit: cover;   /* Crop image to fill the area */
+  border-radius: 8px;
+  margin: 0 auto 14px auto;
+  display: block;
+  box-shadow: 0 1px 6px rgba(0,104,181,0.07);
+}
+
+/* Headings and subheadings center aligned */
+.timeline-card h2,
+.timeline-card h3 {
+  margin: 8px 0 4px 0;
+  color: #0068b5;
+  font-weight: 600;
+}
+
+.timeline-card h2 {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Description (p tag) hidden by default */
+.timeline-card p {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+  overflow: hidden;
+  margin: 12px 0 0 0;
+  color: #333;
+  font-size: 1rem;
+  background: #f0f6fa;
+  border-radius: 6px;
+  padding: 0 8px;
+}
+
+.timeline-card:hover p {
+  opacity: 1;
+  max-height: 200px;
+  padding: 10px 8px;
+  transition: opacity 0.7s, max-height 0.3s; ease-in-out; font-size: smaller;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 700px) {
+  .timeline-cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .timeline-card {
+    max-width: 95vw;
+    min-width: 0;
+  }
+  #timeline-section {
+    margin: 20px 2vw 24px 2vw;
+    border-radius: 10px;
+  }
+}
+
+/* Add some spacing below the section */
+#timeline-section {
+  margin-bottom: 36px;
+}
+
+/* Modern style for the scroll/hint text */
+#timeline-hint {
+  text-align: center;
+  color: #0068b5;
+  font-size: 1rem;
+  margin: 18px 0 32px 0;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
