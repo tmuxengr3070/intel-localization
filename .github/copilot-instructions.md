@@ -28,3 +28,10 @@ remove spacing between header-logo and the h1 tag.
 
 ## Prompt 7
 Add a vibrant blue and teal color gradient background to the header section to enhance visual appeal and align with Intel's branding. Ensure the gradient transitions smoothly from blue to teal, creating a dynamic and engaging header area.
+
+## Prompt 8
+I'm adapting a webpage that already includes a timeline section, and I'm working to make the page RTL-compatible. I’ve added Bootstrap to enable right-to-left text flow. Now, I want to add a **new section** below the timeline that uses Bootstrap’s grid system to create a responsive three-column layout.
+
+Important: the timeline section already works well using flexbox, so I do **not** want to modify or replace that section. Leave the existing timeline code as-is.
+
+Help me generate the new HTML and Bootstrap classes for the three-column layout only, and explain what the code is doing.
