@@ -53,3 +53,7 @@ Adjust color contrast and ensure descriptive alt attributes are present for all 
 
 ## Prompt 14
 Ensure background and foreground colors have a sufficient contrast ratio.
+
+## Prompt 15
+Use JavaScript to detect when Google Translate changes the page language and apply RTL mode if the detected language is right-to-left. Ensure it updates dynamically when the translation changes.
+
